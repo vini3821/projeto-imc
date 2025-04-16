@@ -28,20 +28,22 @@
                 <label for="nome" class="placeholder">Digite sua altura (m)</label>
             </div>
 
-            <div class="botoes">
-                <button class="button" onclick="calcularIMC()">Calcular IMC</button>
-                <button class="button reset-button" onclick="resetarIMC()">Resetar</button>
-            </div>
-
+            <button class="button" onclick="calcularIMC()">Calcular IMC</button>
 
         </div>
 
-        <div class="resultado">
-            <h2 class="h2"> Resultado:</h2>
-            <a id="resultado" class="IMCresult">Seu IMC é:  </a>
-            <a id="classificacao" class="IMCresult"> Classificação:  </a>
-        </div>
+         <br>
+         
     </main>
+
+    <div class="resultado" style="display: none;">
+        <h2 class="h2"> Resultado:</h2>
+        <a id="resultado" class="IMCresult">Seu IMC é: -- </a>
+        <a id="classificacao" class="IMCresult"> Classificação: -- </a>
+    
+        <button class="button" onclick="resetarIMC()">Resetar</button>
+    </div>
+    
 </body>
 
 </html>

@@ -36,12 +36,15 @@ function calcularIMC() {
         classificacao = "Obesidade Grau III";
     }
 
+    document.querySelector(".resultado").style.display = "block";
     document.getElementById("resultado").innerHTML = `Seu IMC é: ${imc.toFixed(2)}`;
     document.getElementById("classificacao").innerHTML = `Classificação: ${classificacao}`;
 }
+
 function resetarIMC() {
-    document.getElementById("peso").value = '';
-    document.getElementById("altura").value = '';
-    document.getElementById("resultado").textContent = 'Seu IMC é:';
-    document.getElementById("classificacao").textContent = 'Classificação:';
+    document.getElementById('peso').value = '';
+    document.getElementById('altura').value = '';
+    document.getElementById('resultado').textContent = 'Seu IMC é: --';
+    document.getElementById('classificacao').textContent = 'Classificação: --';
+    document.querySelector('.resultado').style.display = 'none';
 }

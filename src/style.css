@@ -1,5 +1,5 @@
 body {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
@@ -69,7 +69,6 @@ main {
     cursor: pointer;
     width: 100%;
     background-color: #007bff;
-    border-radius: 10px;
 }
 
 .button:hover {
@@ -79,39 +78,29 @@ main {
 .resultado {
     display: grid;
     justify-content: start;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
 }
 
 h1 i {
     margin-right: 10px;
-    color: #000000;
+    color: #007bff;
     font-size: 24px;
 }
 
 .h2 {
+    margin: 5px;
     display: grid;
     justify-content: left;
-    margin-bottom: 8px;
 }
 
 .IMCresult {
     display: grid;
     justify-content: left;
-}
-
-.botoes {
-    display: flex;
-    gap: 10px;
-}
-
-.button.metade {
-    width: 50%;
-}
-
-.reset-button {
-    background-color: #9c9c9c; /* vermelho */
-    color: white;
-}
-
-.reset-button:hover {
-    background-color: #9c9c9c;
 }
