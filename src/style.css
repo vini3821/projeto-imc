@@ -97,3 +97,21 @@ h1 i {
     display: grid;
     justify-content: left;
 }
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.button.metade {
+    width: 50%;
+}
+
+.reset-button {
+    background-color: #9c9c9c; /* vermelho */
+    color: white;
+}
+
+.reset-button:hover {
+    background-color: #9c9c9c;
+}

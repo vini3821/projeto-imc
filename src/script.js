@@ -39,3 +39,9 @@ function calcularIMC() {
     document.getElementById("resultado").innerHTML = `Seu IMC é: ${imc.toFixed(2)}`;
     document.getElementById("classificacao").innerHTML = `Classificação: ${classificacao}`;
 }
+function resetarIMC() {
+    document.getElementById("peso").value = '';
+    document.getElementById("altura").value = '';
+    document.getElementById("resultado").textContent = 'Seu IMC é:';
+    document.getElementById("classificacao").textContent = 'Classificação:';
+}
